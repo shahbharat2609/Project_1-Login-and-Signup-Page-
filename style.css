@@ -1,0 +1,118 @@
+ body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.outer-div {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.left {
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+
+.right {
+    color: #fed67d;
+    font-size: 40px;
+}
+
+p {
+    color: white;
+    font-size: 120%;
+}
+
+img {
+    max-width: 60%;
+    max-height: 70%;
+    z-index: 1;
+    object-fit: contain;
+    margin-right: 1%;
+    position: relative;
+}
+
+.column {
+    border-color:  transparent;
+    box-sizing: border-box;
+}
+
+.column:nth-child(1) {
+    background-image: linear-gradient(to right ,#fd8e32 23%,white);
+    padding: 20%;
+    max-height: 100vh;
+}
+
+.column:nth-child(2) {
+    /* background-color: #fcf2dc; */
+    padding: 100px;
+    max-height: 100vh;
+}
+
+.btn {
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+.custom-btn {
+    color: #FF9843;
+    background-color: transparent;
+    border: 1px solid #FF9843;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; 
+} 
+
+.custom-btn:hover {
+    color: white;
+    background-color: #FF9843;
+}
+
+.socials {
+    background-color: white;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.f-icons {
+    margin: 20px 10px;
+    font-size: 40px;
+}
+
+.f-icons:nth-child(1) {
+    color: #316FF6;
+}
+
+.f-icons:nth-child(2) {
+    color: #db4437;
+}
+
+.f-icons:nth-child(3) {
+    color: #0077b5;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .outer-div {
+        grid-template-columns: 100%; 
+    }
+
+    .column:nth-child(1),
+    .column:nth-child(2) {
+        padding: 20px; 
+    }
+
+    img {
+        max-width: 40%;
+        max-height: 60%;
+        padding-top: 15px;
+    }
+}
